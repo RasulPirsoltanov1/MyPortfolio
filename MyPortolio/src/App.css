@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.body{
+  height: 90vh;
+  color: azure;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../public/bg.jpg");
+}
+
+.navbar {
+  padding:0 5px ;
+  text-align: center;
+  background-color: blue;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+.toggleButton{
+  display: none;
+}
+.toggleButton{
+  color: aliceblue;
+}
+
+.logo{
+  
+  border-radius: 3rem;
+  width: 54%;
+}
+.logoImg{
+  border-radius: 3rem;
+  width: inherit;
+  height: 3rem;
+}
+
+
+
+.footer{
+  background-color: blue;
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.socialMedia{
+  padding-bottom: 1rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+   .links{
+    top: 4rem;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+
+   }  
+   .toggleButton{
+    position: absolute;
+    right: 20px;
+    display: block;
+  }
+  #open{
+    width: 50%;
+    right: 0;
+    font-size: small;
+    position: absolute;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 1rem;
+    transform: scaleX(1);
+  }
+  .link{
+    margin: 1rem;
+  }
+}
