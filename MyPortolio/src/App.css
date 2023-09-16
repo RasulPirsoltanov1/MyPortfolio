@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.body{
-  height: 90vh;
+.body {
   color: azure;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 }
 
 .navbar {
-  padding:0 5px ;
+  padding: 0 5px;
   text-align: center;
   background-color: blue;
   height: 4rem;
@@ -30,26 +30,27 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 
 .link {
   text-decoration: none;
   color: white;
 }
-.toggleButton{
+
+.toggleButton {
   display: none;
 }
-.toggleButton{
+
+.toggleButton {
   color: aliceblue;
 }
 
-.logo{
-  
+.logo {
   border-radius: 3rem;
-  width: 54%;
+  width: 60%;
 }
-.logoImg{
+
+.logoImg {
   border-radius: 3rem;
   width: inherit;
   height: 3rem;
@@ -57,7 +58,7 @@
 
 
 
-.footer{
+.footer {
   background-color: blue;
   width: 100%;
   color: aliceblue;
@@ -68,7 +69,7 @@
   padding: 2rem;
 }
 
-.socialMedia{
+.socialMedia {
   padding-bottom: 1rem;
   width: 30%;
   display: flex;
@@ -76,40 +77,87 @@
 }
 
 
+.home {
+  height: 100%;
+  color: yellow;
+  text-align: center;
+}
+
+.home .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50%;
+  padding: 4rem 0;
+  font-size: 3rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .about .name {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.icon {
+ margin: 0 2rem;
+ margin-top: 3rem;
+ font-size: 48px;
+}
+
+.home .skills {
+  height: 50%;
+  padding: 4rem 0;
+  font-size: 3rem;
+  overflow: hidden;
+  background-color: rgba(60, 65, 161, 0.5);
+  padding: 4rem 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.skillType{
+  margin-top: 4rem;
+}
 
 
 
-
-
-
-
-
-
-
-@media (max-width:600px){
-   .links{
+@media (max-width:600px) {
+  .links {
+    width: 50%;
     top: 4rem;
     position: absolute;
+    flex-direction: column;
+    right: 0;
+    font-size: small;
+    background-color: aqua;
+    border-radius: 1rem;
     transform: scaleX(0);
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 
-   }  
-   .toggleButton{
+  }
+
+  .toggleButton {
     position: absolute;
     right: 20px;
     display: block;
   }
-  #open{
-    width: 50%;
-    right: 0;
-    font-size: small;
-    position: absolute;
-    flex-direction: column;
-    background-color: aqua;
-    border-radius: 1rem;
+
+  #open {
+    background-color: rgba(2, 21, 103, 0.5);
     transform: scaleX(1);
   }
-  .link{
+
+  .link {
     margin: 1rem;
+  }
+
+  .home .about img {
+    width: 19rem;
   }
 }

@@ -20,8 +20,7 @@ function Navbar() {
       </div>
       <div className='links' id={expandNavbar ? "open" : "close"}>
         <Link to={"/"} className='link'>Home</Link>
-        <Link to={"/projects"} className='link'>Projects</Link>
-        <Link to={"/experience"} className='link'>Experience</Link>
+        <a href="#skills">Skills</a>
       </div>
     </div>
   )
